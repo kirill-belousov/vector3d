@@ -1,5 +1,5 @@
 name = "vector3d"
-v = "1.0.0a1"
+v = "1.0.0a2"
 author = "Cyrmax"
 email = "bkm.grotschool@yandex.ru"
 description = "Vector3D is a small package for processing 3D vector in decartian system and some vector-related function, such as distance between two points, angle between vectors, ETC"
