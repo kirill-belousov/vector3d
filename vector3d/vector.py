@@ -1,5 +1,5 @@
+from math import sqrt
 class Vector:
-	from math import sqrt
 	x = float()
 	y = float()
 	z = float()
@@ -17,27 +17,29 @@ class Vector:
 		return self.length()
 	
 	
-	def __add_(self, o):
+	def __add__(self, o):
 		return Vector((self.x + o.x), (self.y + o.y), (self.z + o.z))
 	
 	def __sub__(self, o):
 		return Vector((self.x - o.x), (self.y - o.y), (self.z - o.z))
 	
 	def __mul__(self, o):
-		return Vector((self.x * o.x) + (self.y * o.y) + (self.z * o.z))
+		return ((self.x * o.x) + (self.y * o.y) + (self.z * o.z))
 	
 	def __iadd__(self, o):
 		self.x += o.x
 		self.y += o.y
 		self.z += o.z
+		return self
 	
 	def __isub__(self, o):
 		self.x -= o.x
 		self.y -= o.y
 		self.z -= o.z
+		return self
 	
 	def __neg__(self):
 		return Vector(-self.x, -self.y, -self.z)
 	
 	def length(self):
-		return sqrt(self.x^2 + self.y^2 + self.z^2)
+		return sqrt((self.x*self.x) + (self.y*self.y) + (self.z*self.z))
