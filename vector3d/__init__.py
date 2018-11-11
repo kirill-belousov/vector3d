@@ -1,2 +1,3 @@
 name = "Vector3D"
-from .vector import *
+from . import vector
+from . import point
