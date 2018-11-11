@@ -1,3 +1,4 @@
+from math import sqrt
 class Point:
 	x = float()
 	y = float()
@@ -7,3 +8,9 @@ class Point:
 		self.x = x
 		self.y = y
 		self.z = z
+
+def distance(a, b):
+	return sqrt((b.x - a.x)^2 + (b.y - a.y)^2 + (b.z - a.z)^2)
+
+def center(a, b):
+	return Point((b.x - a.x)/2, (b.y - a.y)/2, (b.z - a.z)/2)

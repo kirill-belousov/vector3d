@@ -1,5 +1,5 @@
 from .point import Point
-from math import sqrt
+from math import sqrt, acos, degrees
 class Vector:
 	x = float()
 	y = float()
@@ -47,3 +47,7 @@ class Vector:
 
 def from_points(a=Point(0,0,0), b=Point(0,0,0)):
 	return Vector(b.x - a.x, b.y - a.y, b.z - a.z)
+
+def angle(a, b):
+	m = a.x*b.x + a.y*b.y + a.z*b.z
+	return degrees(acos(m / a.length() / b.length()))
