@@ -15,7 +15,7 @@ class Vector:
 		else: return False
 	
 	def __len__(self):
-		return self.length()
+		return int(self.length())
 	
 	
 	def __add__(self, o):
