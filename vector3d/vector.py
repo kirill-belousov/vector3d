@@ -53,7 +53,7 @@ def angle(a, b):
 	return degrees(acos(m / a.length() / b.length()))
 
 def horizontal_angle(a, b):
-	return angle(Vector(a.x, a.y, 0), Vector(b.x, b.y, 0)
+	return angle(Vector(a.x, a.y, 0), Vector(b.x, b.y, 0))
 
 def vertical_angle(a, b):
 	return angle(Vector(0, a.y, a.z), Vector(0, b.y, b.z))
