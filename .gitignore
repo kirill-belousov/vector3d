@@ -1,6 +1,5 @@
 **/__pycache__
 **/__pycache__/**
 **/*.pyc
-dist/*
 build/*
 vector3d.egg-info/*
