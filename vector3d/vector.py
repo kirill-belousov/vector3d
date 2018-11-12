@@ -44,7 +44,6 @@ class Vector:
 	
 	def length(self):
 		return sqrt((self.x*self.x) + (self.y*self.y) + (self.z*self.z))
-
 	
 	def normalize(self):
 		return Vector((self.x / self.length()), (self.y / self.length()), (self.z / self.length()))
@@ -54,7 +53,7 @@ def from_points(a=Point(0,0,0), b=Point(0,0,0)):
 
 def angle(a, b):
 	m = a.x*b.x + a.y*b.y + a.z*b.z
-	return degrees(acos(m / a.length() / b.length()))
+	return degrees(acos(m / (a.length() * b.length())))
 
 def horizontal_angle(a, b):
 	return angle(Vector(a.x, a.y, 0), Vector(b.x, b.y, 0))
