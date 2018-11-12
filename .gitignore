@@ -3,3 +3,4 @@
 **/*.pyc
 build/*
 vector3d.egg-info/*
+dist/*

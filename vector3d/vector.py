@@ -45,6 +45,10 @@ class Vector:
 	def length(self):
 		return sqrt((self.x*self.x) + (self.y*self.y) + (self.z*self.z))
 
+	
+	def normalize(self):
+		return Vector((self.x / self.length()), (self.y / self.length()), (self.z / self.length()))
+
 def from_points(a=Point(0,0,0), b=Point(0,0,0)):
 	return Vector(b.x - a.x, b.y - a.y, b.z - a.z)
 
