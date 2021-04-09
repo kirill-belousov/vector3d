@@ -41,6 +41,9 @@ class Vector:
 	
 	def __neg__(self):
 		return Vector(-self.x, -self.y, -self.z)
+
+	def __repr__(self):
+		return "Vector({}, {}, {})".format(self.x, self.y, self.z)
 	
 	def length(self):
 		return sqrt((self.x*self.x) + (self.y*self.y) + (self.z*self.z))
