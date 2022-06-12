@@ -28,7 +28,7 @@ Can be created as:
 * or simply Vector() which is equivalent to Vector(0, 0, 0)
 
 #### Functions in vector3d.vector
-* from_point(a, b) - creates a vector from pair of points, begining and ending of vector.
+* from_points(a, b) - creates a vector from pair of points, begining and ending of vector.
 * angle(a, b) - calculates angle between vectors a and b.
 * horizontal_angle(a, b) - calculates angle between vectors a and b, but without Z coordinate (projections of a and b to XY plane).
 * vertical_angle(a, b) - calculates angle between vectors a and b, but without X coordinate (projections of a and b to YZ plane)
